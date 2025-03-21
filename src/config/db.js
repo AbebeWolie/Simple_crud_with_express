@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-
+dotenv.config();
 const connectionDb = async(req,res)=>{
     try{
         const db = await mongoose.connect(process.env.MONGO_URI);
